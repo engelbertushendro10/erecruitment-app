@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">erecruitment</string>
+    <string name="app_names">e-recruitment app</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">sign in</string>
+    <string name="nameapp">E-RECRUITMENT APP</string>
+    <string name="welcome">e-recruitment</string>
+    <string name="todo">todo</string>
+    <string name="version">version 1.0</string>
+    <string name="signin">Sign in</string>
+    <string name="email">engelbertushendro10@gmail.com</string>
+    <string name="register">Register</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="profile">Profile</string>
+    <string name="password">password</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="username">username</string>
+    <string name="send">send</string>
+    <string name="logo">erecruitment</string>
+    <string name="my_dashboard">Engelbertus Hendro</string>
+    <string name="under_dsb">Sen, 18 okt 2020</string>
+    <string name="Hallo">Hallo</string>
+    <string name="search_text">Search Something</string>
+    <string name="phone">082236695315</string>
+    <string name="developer">Android Developer</string>
+    <string name="address">Jl. Pratama No. 85 Nusa Dua</string>
+    <string name="skill">Skill</string>
+    <string name="angka_1">1</string>
+    <string name="angka_2">2</string>
+    <string name="angka_3">3</string>
+    <string name="pengurangan">-</string>
+    <string name="angka_4">4</string>
+    <string name="angka_5">5</string>
+    <string name="angka_6">6</string>
+    <string name="perkalian">X</string>
+    <string name="angka_7">7</string>
+    <string name="angka_8">8</string>
+    <string name="angka_9">9</string>
+    <string name="div">/</string>
+    <string name="clear">C</string>
+    <string name="delete">DEL</string>
+    <string name="angka_nol">0</string>
+    <string name="equals">=</string>
+    <string name="tampilan_awal">0</string>
+    <string name="koma">.</string>
+    <string name="kurung_buka">(</string>
+    <string name="kurung_tutup">)</string>
+    <string name="pertambahan">+</string>
+</resources>
