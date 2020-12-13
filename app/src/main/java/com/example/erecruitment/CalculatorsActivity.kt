@@ -27,7 +27,7 @@ class CalculatorsActivity : AppCompatActivity() {
     fun onEqual(view: View) = try {
         val expression: Expression = ExpressionBuilder(textresult.text.toString()).build()
         val result:Double = expression.evaluate()
-        textresult.text = (if (result % 1 > 0)result else result.toInt()).toString()
+        textresult.text = (if (result % result > 0)result else result.toInt()).toString()
     }catch(e:Exception){
         e.printStackTrace()
         Toast.makeText(this,"operator can not operation", Toast.LENGTH_SHORT).show()

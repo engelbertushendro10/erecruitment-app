@@ -1,9 +1,9 @@
 package com.example.erecruitment
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.example.erecruitment.R.id.btn_calc
 import com.example.erecruitment.R.id.btn_dice
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -24,14 +24,14 @@ class ProfileActivity : AppCompatActivity() {
         }
         val btnDice = findViewById<Button>(btn_dice)
         btnDice.setOnClickListener {
-            val i = Intent(this, CalculatorsActivity::class.java)
+            val i = Intent(this, RolldiceActivity::class.java)
             startActivity(i)
         }
-//        val btncalc = findViewById<Button>(btn_calc)
-//        btncalc.setOnClickListener {
-//            val i = Intent(this , CalculatorActivity::class.java)
-//            startActivity(i)
-//        }
+        val btncalc = findViewById<Button>(btn_calc)
+        btncalc.setOnClickListener {
+            val i = Intent(this , CalculatorsActivity::class.java)
+            startActivity(i)
+        }
     }
 
     private fun profile(){
@@ -46,9 +46,5 @@ class ProfileActivity : AppCompatActivity() {
         val a = Intent(this, SearchActivity::class.java)
         startActivity(a)
     }
-//    fun calc (){
-//        val a = Intent(this, ProfileActivity::class.java)
-//        startActivity(a)
-//    }
 
 }

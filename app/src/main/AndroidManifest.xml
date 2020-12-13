@@ -10,7 +10,8 @@
         android:roundIcon="@drawable/rounded_corner_button"
         android:supportsRtl="true"
         android:theme="@style/Theme.Erecruitment">
-        <activity android:name=".CalculatorsActivity"/>
+        <activity android:name=".RolldiceActivity"></activity>
+        <activity android:name=".CalculatorsActivity" />
         <activity android:name=".CalculatorActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".ResetPassword" />

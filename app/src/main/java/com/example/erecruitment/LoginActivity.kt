@@ -2,20 +2,15 @@ package com.example.erecruitment
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.nfc.NfcAdapter.EXTRA_DATA
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
-import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
-import com.example.erecruitment.fragments.HomeFragment
-import org.w3c.dom.Text
+import androidx.appcompat.app.AppCompatActivity
 class LoginActivity : AppCompatActivity() {
 
     @SuppressLint("WrongViewCast", "ClickableViewAccessibility")
@@ -30,10 +25,16 @@ class LoginActivity : AppCompatActivity() {
         val btn_login = findViewById<Button>(R.id.signin)
         val signup = findViewById<TextView>(R.id.signup)
         val forgetpassword = findViewById<TextView>(R.id.forgetpassword)
+        val email:EditText = findViewById(R.id.email)
+        val password:EditText= findViewById(R.id.password)
 
         btn_login.setOnClickListener {
+            if (email.text.toString().isEmpty()|| password.text.toString().isEmpty()){
+                email.error = "semua field Harus di isi !!"
+            }else{
             val i = Intent(this, HomeActivity::class.java)
             startActivity(i)
+            }
         }
 
         fun intent(){
