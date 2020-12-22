@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.erecruitment">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -10,15 +11,14 @@
         android:roundIcon="@drawable/rounded_corner_button"
         android:supportsRtl="true"
         android:theme="@style/Theme.Erecruitment">
-        <activity android:name=".RolldiceActivity"></activity>
-        <activity android:name=".CalculatorsActivity" />
-        <activity android:name=".CalculatorActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".ResetPassword" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".App.WebView.WebViewActivity"/>
+        <activity android:name=".App.Search.SearchActivity" />
+        <activity android:name=".App.Profile.ProfileActivity" />
+        <activity android:name=".App.Password.ResetPassword" />
+        <activity android:name=".App.Home.HomeActivity" />
+        <activity android:name=".App.Register.RegisterActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".App.Login.LoginActivity"
             android:label="Login" />
         <activity android:name=".MainActivity">
             <intent-filter>

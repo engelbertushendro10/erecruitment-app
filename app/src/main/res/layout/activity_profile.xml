@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#ffffff"
-    tools:context=".ProfileActivity">
+    tools:context=".App.Profile.ProfileActivity">
 
     <RelativeLayout
         android:id="@+id/layotu_header"
@@ -85,11 +86,14 @@
 
     <RelativeLayout
         android:id="@+id/layout_skill"
-        android:layout_width="match_parent"
-        android:layout_height="214dp"
+        android:layout_width="385dp"
+        android:layout_height="185dp"
         android:layout_marginTop="40dp"
+        android:background="@drawable/radius_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bio"
-        tools:layout_editor_absoluteX="12dp">
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/tv_skill"
@@ -169,8 +173,8 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="3dp"
-            android:layout_marginEnd="143dp"
-            android:layout_marginRight="143dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginRight="107dp"
             android:background="@drawable/button"
             android:gravity="center"
             android:text="Laravel"
@@ -212,44 +216,7 @@
         app:layout_constraintTop_toBottomOf="@+id/layout_skill"
         tools:layout_editor_absoluteX="54dp">
 
-        <TextView
-            android:id="@+id/icon_facebook"
-            android:layout_width="139dp"
-            android:layout_height="28dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="183dp"
-            android:layout_marginRight="183dp"
-            android:layout_toEndOf="@+id/facebook"
-            android:layout_toRightOf="@+id/facebook"
-            android:text="facebook"
-            android:textSize="18dp" />
-
         <ImageView
-            android:id="@+id/facebook"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/intelij" />
-
-        <TextView
-            android:id="@+id/icon_ig"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/icon_facebook"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="22dp"
-            android:layout_toEndOf="@+id/facebook"
-            android:layout_toRightOf="@+id/facebook"
-            android:text="Instagram"
-            android:textSize="18dp" />
-
-        <ImageView
-
             android:id="@+id/ig"
             android:layout_width="64dp"
             android:layout_height="58dp"
@@ -258,13 +225,26 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="1dp"
             android:layout_marginRight="1dp"
-            android:layout_marginBottom="77dp"
+            android:layout_marginBottom="127dp"
             android:layout_toStartOf="@+id/icon_facebook"
             android:layout_toLeftOf="@+id/icon_facebook"
             android:src="@drawable/intelij" />
 
-        <ImageView
+        <TextView
+            android:id="@+id/icon_ig"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginBottom="140dp"
+            android:layout_toEndOf="@+id/github"
+            android:layout_toRightOf="@+id/github"
+            android:text="gmmial"
+            android:textSize="18dp" />
 
+        <ImageView
             android:id="@+id/github"
             android:layout_width="62dp"
             android:layout_height="52dp"
@@ -272,7 +252,7 @@
             android:layout_marginTop="3dp"
             android:layout_marginEnd="3dp"
             android:layout_marginRight="3dp"
-            android:layout_marginBottom="27dp"
+            android:layout_marginBottom="74dp"
             android:layout_toStartOf="@+id/icon_facebook"
             android:layout_toLeftOf="@+id/icon_facebook"
             android:src="@drawable/intelij" />
@@ -283,8 +263,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/icon_facebook"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="21dp"
-            android:layout_marginLeft="21dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
             android:layout_marginTop="81dp"
             android:layout_toEndOf="@+id/github"
             android:layout_toRightOf="@+id/github"
@@ -293,29 +273,49 @@
 
         <Button
             android:id="@+id/btn_calc"
+            android:layout_width="108dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="57dp"
+            android:layout_toEndOf="@+id/icon_github"
+            android:layout_toRightOf="@+id/icon_github"
+            android:text="Git" />
+
+        <Button
+            android:id="@+id/btn_logout"
             android:layout_width="110dp"
             android:layout_height="50dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginEnd="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginBottom="26dp"
+            android:layout_marginStart="-89dp"
+            android:layout_marginLeft="-89dp"
+            android:layout_marginEnd="149dp"
+            android:layout_marginRight="149dp"
+            android:layout_marginBottom="13dp"
             android:layout_toEndOf="@+id/icon_github"
             android:layout_toRightOf="@+id/icon_github"
-            android:text="calc" />
+            android:onClick="onClick"
+            android:text="logout" />
 
         <Button
-            android:id="@+id/btn_dice"
+            android:id="@+id/hitung"
             android:layout_width="110dp"
             android:layout_height="50dp"
-            android:layout_marginStart="49dp"
-            android:layout_marginLeft="49dp"
-            android:layout_toEndOf="@+id/icon_github"
-            android:layout_toRightOf="@+id/icon_github"
-            android:text="dice" />
+            android:layout_below="@+id/btn_dice"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:text="Gmail" />
+
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -336,6 +336,7 @@
             />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
 
 
 

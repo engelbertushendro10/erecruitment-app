@@ -4,10 +4,10 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import com.example.erecruitment.App.Login.LoginActivity
 
 
 @Suppress("DEPRECATION")
@@ -28,12 +28,28 @@ class MainActivity : AppCompatActivity() {
         }, 3000)
     }
 
-    fun onOperator(view: View) {}
-    fun onDecimal(view: View) {}
-    fun onBreaketStart(view: View) {}
-    fun onBreaketEnd(view: View) {}
-    fun onDigit(view: View) {}
-    fun onClear(view: View) {}
-    fun onDelete(view: View) {}
-    fun onEqual(view: View) {}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

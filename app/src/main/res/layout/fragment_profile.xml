@@ -218,11 +218,11 @@ tools:context=".fragments.ProfileFragment">
             android:layout_height="28dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="183dp"
-            android:layout_marginRight="183dp"
+            android:layout_marginEnd="181dp"
+            android:layout_marginRight="181dp"
             android:layout_toEndOf="@+id/facebook"
             android:layout_toRightOf="@+id/facebook"
             android:text="facebook"
@@ -246,7 +246,7 @@ tools:context=".fragments.ProfileFragment">
             android:layout_toEndOf="@+id/facebook"
             android:layout_toRightOf="@+id/facebook"
             android:text="Instagram"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
 
         <ImageView
 
@@ -305,17 +305,32 @@ tools:context=".fragments.ProfileFragment">
             android:layout_marginBottom="26dp"
             android:layout_toEndOf="@+id/icon_github"
             android:layout_toRightOf="@+id/icon_github"
-            android:text="calc" />
+            android:text="github" />
 
         <Button
             android:id="@+id/btn_dice"
+            android:onClick="logouts"
             android:layout_width="110dp"
             android:layout_height="50dp"
             android:layout_marginStart="49dp"
             android:layout_marginLeft="49dp"
             android:layout_toEndOf="@+id/icon_github"
             android:layout_toRightOf="@+id/icon_github"
-            android:text="dice" />
+            android:text="Fb" />
+
+        <Button
+            android:id="@+id/hitung"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btn_calc"
+            android:layout_below="@+id/icon_facebook"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Ig" />
 
 
     </RelativeLayout>
