@@ -11,7 +11,6 @@ import androidx.databinding.DataBindingUtil
 import com.example.erecruitment.App.Home.HomeActivity
 import com.example.erecruitment.App.Login.LoginActivity
 import com.example.erecruitment.App.Search.SearchActivity
-import com.example.erecruitment.App.WebView.WebViewActivity
 import com.example.erecruitment.BaseActivity
 import com.example.erecruitment.R
 import com.example.erecruitment.databinding.ActivityProfileBinding
@@ -29,7 +28,6 @@ class ProfileActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
        binding = DataBindingUtil.setContentView(this,R.layout.activity_profile)
-        app()
         pref = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
         binding.bottomNavigation.setOnNavigationItemSelectedListener{
             when(it.itemId){
@@ -39,26 +37,21 @@ class ProfileActivity : BaseActivity() {
             }
             true
         }
-        binding.username.text = "Engelbertus Hendro10"
-        binding.tvEmail.text = "engelbertushendro10@gmail.com"
-        binding.tvAddres.text = "Jl. Pratama No.85 Nusa Dua - Bali"
-        binding.btnCalc.setOnClickListener{
-            val github = Intent(this, WebViewActivity::class.java)
-            startActivity(github)
-        }
-        binding.btnLogout.setOnClickListener{
-            val builder = AlertDialog.Builder(this@ProfileActivity)
-            builder.setTitle("Need To Signout?")
-            builder.setMessage("You Will Be Sign Out From Aplication")
-            builder.setPositiveButton("YES"){dialog, which ->
-                Toast.makeText(applicationContext,"You are Logout.",Toast.LENGTH_SHORT).show()
-                onClicks(v = null)
-            }
-            builder.setNegativeButton("No"){dialog,which ->
-                Toast.makeText(applicationContext,"You are not agree.",Toast.LENGTH_SHORT).show()
-            }
-            val dialog: AlertDialog = builder.create()
-            dialog.show()
+            binding.logout.setOnClickListener() {
+                val builder = AlertDialog.Builder(this@ProfileActivity)
+                builder.setTitle("Need To Signout?")
+                builder.setMessage("You Will Be Sign Out From Aplication")
+                builder.setPositiveButton("YES") { dialog , which ->
+                    Toast.makeText(applicationContext , "You are Logout." , Toast.LENGTH_SHORT)
+                        .show()
+                    onClicks(v = null)
+                }
+                builder.setNegativeButton("No") { dialog , which ->
+                    Toast.makeText(applicationContext , "You are not agree." , Toast.LENGTH_SHORT)
+                        .show()
+                }
+                val dialog: AlertDialog = builder.create()
+                dialog.show()
         }
     }
 
