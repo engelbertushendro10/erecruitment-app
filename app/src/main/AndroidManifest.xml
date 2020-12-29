@@ -2,16 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.erecruitment">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@drawable/rounded_corner_button"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Erecruitment">
-        <activity android:name=".App.WebView.WebViewActivity"/>
+        android:theme="@style/Theme.Erecruitment"
+        android:usesCleartextTraffic="true"
+        tools:ignore="ExtraText"
+        tools:targetApi="m">
+        <activity android:name=".App.Home.ProjectDetail"/>
+        <activity android:name=".App.WebView.WebViewActivity" />
         <activity android:name=".App.Search.SearchActivity" />
         <activity android:name=".App.Profile.ProfileActivity" />
         <activity android:name=".App.Password.ResetPassword" />

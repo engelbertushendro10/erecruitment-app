@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.erecruitment.R
 
+@Suppress("DEPRECATION")
 class ProjectAdapter() : RecyclerView.Adapter<ProjectAdapter.ViewHolder>(){
     private var title = arrayOf("Android Project",
                                 "Web Project",

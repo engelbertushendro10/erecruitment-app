@@ -46,7 +46,7 @@
             android:layout_marginRight="98dp"
             android:layout_toStartOf="@+id/dashboard_pp"
             android:layout_toLeftOf="@+id/dashboard_pp"
-            android:text="@string/under_dsb"
+            android:text="@string/dashboard"
             android:textColor="#FFFF"
             android:textSize="15sp" />
 

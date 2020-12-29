@@ -18,7 +18,6 @@ class SearchActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, layout.activity_search)
-        app()
         binding.bottomNavigation.setOnNavigationItemSelectedListener{
             when(it.itemId){
                 id.ic_home ->home()

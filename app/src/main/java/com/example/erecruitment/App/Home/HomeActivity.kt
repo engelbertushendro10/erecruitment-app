@@ -43,7 +43,7 @@ class  HomeActivity : BaseActivity(){
     }
 
     override fun onClick(v: View?) {
-        TODO("Not yet implemented")
+
     }
     private fun profile(){
         val a = Intent(this, ProfileActivity::class.java)
@@ -56,6 +56,9 @@ class  HomeActivity : BaseActivity(){
     private fun search (){
         val a = Intent(this, SearchActivity::class.java)
         startActivity(a)
+    }
+    fun detail(){
+        startActivity(Intent(this, ProjectDetail::class.java))
     }
 
 
