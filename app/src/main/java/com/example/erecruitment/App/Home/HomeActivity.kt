@@ -11,6 +11,7 @@ import com.example.erecruitment.App.Adapter.ProjectAdapter
 import com.example.erecruitment.App.Adapter.ProjectAdapter.ViewHolder
 import com.example.erecruitment.App.Profile.ProfileActivity
 import com.example.erecruitment.App.Search.SearchActivity
+import com.example.erecruitment.App.api.SessionManager
 import com.example.erecruitment.BaseActivity
 import com.example.erecruitment.R
 import com.example.erecruitment.databinding.ActivityHomeBinding
@@ -20,6 +21,7 @@ class  HomeActivity : BaseActivity(){
     private lateinit var binding: ActivityHomeBinding
     private var layoutManager: LayoutManager? = null
     private var adapter: RecyclerView.Adapter<ViewHolder>? = null
+    private lateinit var sessionManager: SessionManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +31,7 @@ class  HomeActivity : BaseActivity(){
         binding.recyclerview.layoutManager = layoutManager
         adapter = ProjectAdapter()
         binding.recyclerview.adapter=adapter
+        sessionManager = SessionManager(this)
 
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
         bottomNavigation.setOnNavigationItemSelectedListener{

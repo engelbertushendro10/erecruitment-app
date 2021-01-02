@@ -7,6 +7,7 @@ import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import com.example.erecruitment.App.api.SessionManager
 
 abstract class BaseActivity():AppCompatActivity(), View.OnClickListener {
 
@@ -18,5 +19,8 @@ abstract class BaseActivity():AppCompatActivity(), View.OnClickListener {
             val w: Window = window
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         }
+    }
+    protected fun session(){
+        lateinit var sessionManager: SessionManager
     }
 }
