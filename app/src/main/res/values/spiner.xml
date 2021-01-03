@@ -2,7 +2,7 @@
 <resources>
     <string-array name="planets_array">
         <item>Select Account Type</item>
-        <item>Engineer</item>
-        <item>Company</item>
+        <item value = "1">Engineer</item>
+        <item value = "2">Company</item>
     </string-array>
 </resources>

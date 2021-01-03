@@ -41,5 +41,6 @@
     <string name="email_l">email</string>
     <string name="dashboard">Dashboard</string>
     <string name="github">https://github.com/engelbertushendro10</string>
+    <string name="input_email">input email</string>
 
 </resources>
